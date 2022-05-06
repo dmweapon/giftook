@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   change_notifier: ^0.24.0
+  get: ^4.6.1
   
 
 dev_dependencies:
