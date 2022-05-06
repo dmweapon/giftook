@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:giftook/page/homePage.dart';
-import 'package:giftook/page/myPage.dart';
-import 'package:giftook/page/tookTookPage.dart';
+import 'package:giftook/page/home_page/0_home_page.dart';
+import 'package:giftook/page/took_management_page/0_took_management_page.dart';
+import 'package:giftook/page/voting_took_page/0_voting_took_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,19 +12,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: MainPage(),
     );
   }
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class MainPage extends StatefulWidget {
+  const MainPage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MainPageState extends State<MainPage> {
   int _currentIndex = 0;
 
   @override
@@ -73,9 +73,9 @@ class _HomePageState extends State<HomePage> {
       body: IndexedStack(
         index: _currentIndex,
         children: [
-          homePage(),
-          tookTookPage(),
-          myPage(),
+          HomePage(),
+          VotingTookPage(),
+          TookManagementPage(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

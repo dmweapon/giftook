@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class bestTook extends StatefulWidget {
-  const bestTook({Key? key}) : super(key: key);
+class BestTook extends StatefulWidget {
+  const BestTook({Key? key}) : super(key: key);
 
   @override
-  State<bestTook> createState() => _bestTookState();
+  State<BestTook> createState() => _BestTookState();
 }
 
-class _bestTookState extends State<bestTook> {
+class _BestTookState extends State<BestTook> {
   @override
   Widget build(BuildContext context) {
     return Container(
