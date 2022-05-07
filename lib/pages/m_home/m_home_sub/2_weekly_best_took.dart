@@ -17,7 +17,7 @@ class _BestTookState extends State<BestTook> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '주간 TOP10 베스트 툭',
+            '주간 베스트 Top10 툭',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           ),
           SizedBox(
