@@ -1,6 +1,7 @@
 import '../0_appmain/appmain_binding.dart';
 import '../0_appmain/appmain_page.dart';
-import '../s_page1/page1_page.dart';
+import '../s_login/login_page.dart';
+import '../s_login/login_page_binding.dart';
 import '../s_page2/page2_page.dart';
 
 import 'app_routes.dart';
@@ -9,14 +10,14 @@ import 'package:get/get.dart';
 class AppPages {
   static var list = [
     GetPage(
-        name: AppRoutes.APPMAIN,
-        page: () => AppMainPage(),
-        binding: DashboardBinding(),
+        name: AppRoutes.LOGINPAGE,
+        page: () => LoginPage(),
+        binding: LoginPageBinding(),
         transition: Transition.zoom),
     GetPage(
-        name: AppRoutes.PAGE1,
-        page: () => Page1Page(),
-        binding: null,
+        name: AppRoutes.APPMAIN,
+        page: () => AppMainPage(),
+        binding: AppMainBinding(),
         transition: Transition.zoom),
     GetPage(
         name: AppRoutes.PAGE2,

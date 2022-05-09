@@ -8,46 +8,6 @@ class VotingPage extends GetView<VotingController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xffFF8542),
-        elevation: 0.0,
-        centerTitle: false,
-        iconTheme: IconThemeData(color: Color.fromARGB(255, 228, 104, 38)),
-        title: Row(
-          children: [
-            Icon(Icons.monetization_on, color: Colors.white),
-            SizedBox(width: 8.0),
-            Text(
-              "1234 Point",
-              style: TextStyle(fontSize: 16.0, color: Colors.white),
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: null,
-            style: TextButton.styleFrom(
-              primary: Colors.white,
-            ),
-            child: Text("알림"),
-          ),
-          TextButton(
-            onPressed: null,
-            style: TextButton.styleFrom(
-              primary: Colors.white,
-            ),
-            child: Text("검색"),
-          ),
-          // IconButton(
-          //   icon: Icon(Icons.abc, color: Colors.white),
-          //   onPressed: null,
-          // ),
-          // IconButton(
-          //   icon: Icon(Icons.abc, color: Colors.white),
-          //   onPressed: null,
-          // ),
-        ],
-      ),
       body: SingleChildScrollView(
         child: Column(
           // crossAxisAlignment: CrossAxisAlignment.start,
